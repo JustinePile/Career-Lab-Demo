@@ -1,0 +1,118 @@
+@font-face {
+    /* https://fonts.google.com/specimen/Inter/about */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    /* https://fonts.google.com/specimen/Libre+Baskerville/about */
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  
+html {
+    font-family: Inter, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,  sans-serif;
+    height: 100%;
+    color: #3D3D3D;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end; /* Right align the logo */
+    align-items: center;
+    padding: 10px;
+    font-size: 28px;
+}
+
+.logo {
+    margin-right: auto; /* Push the logo to the right */
+    margin-left: 50px;
+}
+
+.hello {
+    margin-left: 20px; /* Add some space between the logo and hello div */
+    margin-right: 50px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    margin: 10px auto;
+}
+
+.portfolio-header {
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+}
+
+.portfolio {
+    padding: 0 10px;
+}
+
+.hline-top {
+    padding-top: 5px;
+    border-top: 1px solid #0D4B6E;
+    margin-bottom: 20px;
+}
+
+.hline-bottom {
+    padding-bottom: 10px;
+    border-bottom: 5px solid #0D4B6E; 
+}
+
+.portfolio-text a {
+    color: #BB1F25;
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.portfolio-text {
+    text-align: center;
+}
+
+.footer {
+    background-color: #3D3D3D;
+    padding: 25px;
+    color: #FFF;
+    text-align: center;
+    margin-top: auto; /* Anchor the footer to the bottom */
+    font-size: 14px;
+}
+
+.footer a {
+    color: #FFF;
+}
+
+/* CSS for screen widths less than 700 pixels */
+@media (max-width: 700px) {
+    .row {
+        flex-wrap: wrap; /* Allow flex items to wrap to a new line */
+    }
+    
+    .portfolio {
+        width: 75%; /* Make each portfolio div takes up enough space to force the next one to the next row */
+        margin: 0 auto 10px auto; 
+    }
+
+    .portfolio img {
+        width: 100%;
+    }
+}
